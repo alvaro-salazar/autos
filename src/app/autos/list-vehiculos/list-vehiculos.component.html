@@ -1,0 +1,28 @@
+<div class="container-fluid max-width-900">
+  <div *ngIf="selected" class="row row-cols-1">
+    <div>
+      <app-detail-auto [vehiculo]="vehiculoSelected"></app-detail-auto>
+    </div>
+  </div>
+
+  <table class="table">
+    <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Linea</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let vehiculo of vehiculos">
+      <tr (click)="onSelected(vehiculo)" >
+        <th scope="row">{{vehiculo.id}}</th>
+        <td>{{vehiculo.marca}}</td>
+        <td>{{vehiculo.modelo}}</td>
+        <td>{{vehiculo.linea}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>
