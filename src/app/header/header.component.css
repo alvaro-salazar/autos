@@ -1,0 +1,15 @@
+.cabecera-centrada {
+  margin-top: 20px;
+  margin-left: 15px; /* el margen izquierdo será del 15% del viewport */
+}
+
+.uceva {
+  width: 500px;
+  height: 120px;
+}
+
+.programa{
+  width: 500px;
+  height: 120px;
+}
+

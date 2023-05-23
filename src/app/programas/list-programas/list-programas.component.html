@@ -1,0 +1,30 @@
+<div class="container-fluid max-width-900">
+  <div *ngIf="selected" class="row row-cols-1">
+    <div>
+      <app-detail-plan [programa]="programaSelected"></app-detail-plan>
+    </div>
+  </div>
+
+  <table class="table">
+    <thead class="table-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NOMBRE</th>
+      <th scope="col">FACULTAD</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let programa of programas" >
+      <tr (click)="onSelected(programa)">
+        <th scope="row">{{programa.id}}</th>
+
+        <td>{{programa.nombre}}</td>
+        <td>{{programa.facultad}}</td>
+
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>
+
