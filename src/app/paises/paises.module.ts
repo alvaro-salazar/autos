@@ -9,7 +9,7 @@ import { CreatePaisComponent } from './create-pais/create-pais.component';
     CreatePaisComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class PaisesModule { }

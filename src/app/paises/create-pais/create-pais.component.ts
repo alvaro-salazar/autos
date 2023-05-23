@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-pais.component.css']
 })
 export class CreatePaisComponent {
-<<<<<<< HEAD
   paisForm: any;
 
-  createPais(value) {
+  createPais(value: any) {
     return false;
-  }
-=======
 
->>>>>>> 45705796a7215aee7fcf7282df4813c4f22cc77e
+  }
+
 }
