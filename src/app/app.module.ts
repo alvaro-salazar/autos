@@ -9,6 +9,8 @@ import {AutosModule} from "./autos/autos.module";
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
+import {ReactiveFormsModule} from "@angular/forms";
+import {PaisesModule} from "./paises/paises.module";
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AutosModule,
+    PaisesModule,
     CommonModule,
     HttpClientModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [VehiculosService],
   bootstrap: [AppComponent]
