@@ -11,7 +11,7 @@ export class PaisService {
   private urlEndPoint: string = 'http://localhost:8081/pais-service/paises';
 
   //Metodo para crear un pais con HttpClient por el metodo POST
-  save(pais: any): Observable<Pais> {
+  save(pais: any): Observable<Pais> { //Se retorna un objeto observable que espera a que este disponible el objeto Pais
     return this.httpClient.post<Pais>(this.urlEndPoint, pais).pipe( //Se realiza la peticion POST al servicio REST
       catchError(() => throwError(() => new Error('Error al crear el pais'))) //Se captura el error en caso de que exista
     );
