@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from "@angular/forms";
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule // <-- Agregar esta linea para que funcione el form builder en el componente create-pais
   ]
 })
 export class PaisesModule { }

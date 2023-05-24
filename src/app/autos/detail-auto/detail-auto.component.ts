@@ -7,7 +7,7 @@ import {Vehiculo} from "../model/vehiculo";
   styleUrls: ['./detail-auto.component.css']
 })
 export class DetailAutoComponent {
-  @Input() public vehiculo!: Vehiculo;
+  @Input() public vehiculo!: Vehiculo; // Recibe el vehiculo desde el componente padre (autos.component.ts)
 
 
 }
